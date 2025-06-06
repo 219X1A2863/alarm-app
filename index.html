@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Alarm Clock</h1>
+    
+    <!-- ✅ Live Time -->
+    <h2 id="clock">00:00:00</h2>
+    
+    <!-- ✅ Live Date -->
+    <p id="date">-- -- ----</p>
+
+    <!-- Alarm Input Section -->
+    <div class="alarm-set">
+      <input type="time" id="alarmTime" required />
+      <button onclick="setAlarm()">Set Alarm</button>
+    </div>
+
+    <!-- Alarm List -->
+    <ul id="alarmList"></ul>
+  </div>
+
+  <!-- Alarm Sound -->
+  <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+
+  <!-- Script -->
+  <script src="scrept.js"></script>
+</body>
+</html>
